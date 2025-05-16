@@ -15,4 +15,9 @@ rye add --dev jupyter-book
 source .venv/bin/activate
 
 jb create myfirstbook
+cd myfirstbook/
+jb build .
+
+pip install ghp-import
+ghp-import -n -p -f _build/html
 ```
